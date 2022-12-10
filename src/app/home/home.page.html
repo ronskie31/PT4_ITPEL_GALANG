@@ -1,0 +1,40 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+      <ion-buttons slot="start">
+          
+      </ion-buttons>
+      <ion-title>Home</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+
+  <!--welcome-->
+  <ion-card>
+      <ion-card-header>
+          <ion-card-title>WELCOME</ion-card-title>
+      </ion-card-header>
+  </ion-card>
+
+  <ion-card>
+      <img src="https://images.pexels.com/photos/406014/pexels-photo-406014.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" />
+      <ion-card-header>
+          <ion-card-title></ion-card-title>
+          <ion-card-subtitle>“A dog is the only thing on earth that loves you more than you love yourself.”</ion-card-subtitle>
+      </ion-card-header>
+  </ion-card>
+
+  <ion-card>
+    <ion-card-header>
+        <ion-card-title class="home90">Dog Identity Records</ion-card-title>
+        <br>
+        <ion-card-subtitle>Register your dog identify here</ion-card-subtitle>
+    </ion-card-header>
+    <div class="button1">
+      <ion-button routerLink="/register">Register</ion-button>
+      <ion-button routerLink="/record">View Records</ion-button>
+    </div>
+    <br>
+</ion-card>
+
+</ion-content>

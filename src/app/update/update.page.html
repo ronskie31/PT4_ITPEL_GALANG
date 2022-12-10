@@ -1,0 +1,71 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>Record Update</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Edit Information </ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      You can now edit the choosen Dog record.
+    </ion-card-content>
+  <ion-list>
+    
+    <ion-item>
+      <ion-label position="floating">Dog name</ion-label>
+      <ion-input [(ngModel)] = "student_no" type="text"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="floating">Dog months</ion-label>
+      <ion-input [(ngModel)] = "student_name" type="text"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="floating">Dog type</ion-label>
+      <ion-input [(ngModel)] = "course" type="text"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-select [(ngModel)] = "year" placeholder="Select Gender">
+        <ion-select-option  value="Male">Male</ion-select-option>
+      <ion-select-option  value="Female">Female</ion-select-option>
+    
+      </ion-select>
+    </ion-item>
+  
+    <ion-item>
+      <ion-label position="floating">Owner Email</ion-label>
+      <ion-input [(ngModel)] = "email" type="text"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="floating">Owner Contact Number</ion-label>
+      <ion-input [(ngModel)] = "contact_no" type="text"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="floating"> Address</ion-label>
+      <ion-input [(ngModel)] = "address" type="text"></ion-input>
+    </ion-item>
+      
+  <br>
+    <ion-row>
+      <ion-col>
+        
+        <ion-button  color="warning" expand="full" shape="round"(click)="updateStudent()"><ion-icon name="checkmark-circle-outline"></ion-icon>Update</ion-button>
+       
+     
+      </ion-col>
+    </ion-row>
+
+  </ion-list>
+  </ion-card>
+
+</ion-content>

@@ -1,0 +1,32 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>Records</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-card>
+    <ion-list>
+      <ion-card>
+        <ion-card-header>
+          <ion-card-title>Dog Records </ion-card-title>
+          <br>
+          <ion-button  color="medium" expand="full"  shape="round" (click)="getStudents()"><ion-icon name="eye-outline"></ion-icon>View Dog Records</ion-button>
+        </ion-card-header>
+        </ion-card>
+      <ion-item lines="inset" *ngFor=" let student of students">
+      <ion-label>
+        <h5><h6>Dog's Name:</h6> {{student.student_no}} <br> <h6>Dog's Month/s:</h6> {{student.student_name}} <br> <h6>Dog's Breed:</h6> {{student.course}} <br> <h6>Email:</h6> {{student.email}} <br> <h6>Contact number:</h6> {{student.contact_no}} <br><h6>Address:</h6>{{student.address}}</h5>
+      </ion-label>
+        <div class="item-note">
+          <ion-icon name="create" style="zoom: 3.0" [routerLink]="['/update',student.id]"></ion-icon>
+          <ion-icon name="trash" style="zoom: 3.0" (click)="deleteStudent(student.id)"></ion-icon>
+        </div>
+      </ion-item>
+    </ion-list>
+  </ion-card>
+</ion-content>
